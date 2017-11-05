@@ -44,7 +44,7 @@ In Figure~\ref{fig:graphical_conceptual_representation}, we can observe a connec
 
 \begin{figure}[!htbp]
 \center
-\includegraphics[width=\textwidth]{res/img/graphical_conceptual_representation}
+\includegraphics[width=0.95\textwidth]{res/img/graphical_conceptual_representation}
 \caption{Conceptual representation of the scenario.}
 \label{fig:graphical_conceptual_representation}
 \end{figure}
@@ -55,7 +55,7 @@ We now move to the matrix representation of the graph in Figure~\ref{fig:graphic
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{res/img/matrix_conceptual_representation}
+\includegraphics[width=0.95\textwidth]{res/img/matrix_conceptual_representation}
 \caption{Matrix format of the conceptual representation}
 \label{fig:matrix_conceptual_representation}
 \end{figure}
@@ -105,14 +105,17 @@ X_{10}(t+\Delta t) = X_{10}(t) + \eta_{10} (id(\omega_{10} X_{9}(t)) - X_{10}(t)
 
 \subsection{Differential equation}
 
+Initial states:
 \begin{equation}
 \frac{\delta X_{1}(t)}{\delta t} = X_{1}(t) + \eta_{1} \cdot ( id(X_{1}(t)) - X_{1}(t))
 \end{equation}
 \begin{equation}
-\frac{\delta X_{2}(t)}{\delta t} = X_{2}(t) + \eta_{2} \cdot ( id(X_{1}(t)) - X_{2}(t))
-\end{equation}
-\begin{equation}
 \frac{\delta X_{3}(t)}{\delta t} = X_{3}(t) + \eta_{3} \cdot ( id(X_{3}(t)) - X_{3}(t))
+\end{equation}
+\\
+Intermediate states:
+\begin{equation}
+\frac{\delta X_{2}(t)}{\delta t} = X_{2}(t) + \eta_{2} \cdot ( id(X_{1}(t)) - X_{2}(t))
 \end{equation}
 \begin{equation}
 \frac{\delta X_{4}(t)}{\delta t} = X_{4}(t) + \eta_{4} \cdot ( alogistic_{\sigma ,\tau}(\omega_{2} X_{2}(t),\omega_{3} X_{3}(t)) - X_{4}(t))
@@ -132,35 +135,36 @@ X_{10}(t+\Delta t) = X_{10}(t) + \eta_{10} (id(\omega_{10} X_{9}(t)) - X_{10}(t)
 \begin{equation}
 \frac{\delta X_{9}(t)}{\delta t} = X_{9}(t) + \eta_{9} \cdot ( id(X_{8}(t)) - X_{9}(t))
 \end{equation}
+\\
+Final state:
 \begin{equation}
 \frac{\delta X_{10}(t)}{\delta t} = X_{10}(t) + \eta_{10} \cdot ( id(X_{9}(t)) - X_{10}(t))
 \end{equation}
 
-\section{Expected behaviour}
- \begin{itemize}
-\item constant and non-zero states:  Jenny's presence, Jenny's liking of Mark
-\item starting at 0 states: all the others
-\item The expected behavior of the network: the network starts with Jenny's presence as non-zero, which makes Mark's happiness go from low to high. This change, together with the constant factor of Jenny liking Mark, make Jenny's nervousness go from low to high, which makes her break a vase (Jenny's vase breaking goes from low to high). As a consequence of the breaking, Mark's anger goes from low to high, which makes Jenny's sadness also go from low to high. This change in Jenny's sadness makes Mark's anger go from high back to low and it also makes Mark's hugging of Jenny go from low to high. The change in the hugging state makes Dion's jealousy go from low to high and as a consequence she breaks a vase (Dion's vase breaking goes from low to high)
-\end{itemize}
+\section{Expected behaviour}\label{sec:expected_behaviour}
 
+There are two constant and non-zero states at $t = 0$: Jenny's presence ($X_{1}$) and Jenny liking of Mark ($X_{3}$). All the others states ($X_{2}$, $X_{4}$, $X_{5}$, $\ldots$, $X_{10}$) are starting at $0$. We expect the behaviour of the network as follows: it starts with Jenny's presence as non-zero, which makes Mark's happiness go from low to high. This change, together with the constant factor of Jenny liking Mark, make Jenny's nervousness go from low to high, which makes her break a vase (Jenny's vase breaking goes from low to high). As a consequence of the breaking, Mark's anger goes from low to high, which makes Jenny's sadness also go from low to high. This change in Jenny's sadness makes Mark's anger go from high back to low and it also makes Mark's hugging of Jenny go from low to high. The change in the hugging state makes Dion's jealousy go from low to high and as a consequence she breaks a vase (Dion's vase breaking goes from low to high). During all these processes, we can observe temporal-causal relationships between nodes connected by edges.
 
-
-
+\begin{figure}[!ht]
+\center
+\includegraphics[width=\textwidth]{res/img/numerical_representation}
+\caption{Results obtained from the simulation of the scenario. All the edges are weighted the same ($\omega_{i} = 1$), except for $\omega_{7} = -1$. They also share the same speed factor: $\eta_{i} = 0.5,  i = 1 \ldots 10$. The \textit{alogistic} function is set with $\sigma = 10$ and $\tau = 1$}
+\label{fig:numerical_representation}
+\end{figure}
 
 \section{Simulation}
 
-\begin{figure}[!htbp]
-\center
-\includegraphics[width=\textwidth]{res/img/numerical_representation}
-\end{figure}
+In this section, we analyze the experimental results too check if they are coherents with the expected behaviour described in Section \ref{sec:expected_behaviour}. As we can see in Figure~\ref{fig:numerical_representation}, the two costant states - $X_{1}$ and $X_{3}$ - are set to 1. The states connected to them ($X_{2}$ and $X_{4}$) are activated due to a \textit{causal relationship}. Moreover, we can see how the connection that models the negative impact (i.e. the edge from $X_{7}$ to $X_{6}$) lowers the value of $X_{6}$ around $t = 10$. Finally, we observe how the loop lead to a convergence of values of all the involved nodes - $X_{6}$ and $X_{7}$, and consequently $X_{8}$, $X_{9}$ and $X_{10}$.
 
 
 
-%\begin{thebibliography}{9}
-%\bibitem{nano3}
-%  K. Grove-Rasmussen og Jesper Nygård,
-%  \emph{Kvantefænomener i Nanosystemer}.
-%  Niels Bohr Institute \& Nano-Science Center, Københavns Universitet
 
-%\end{thebibliography}
+
+\begin{thebibliography}{9}
+\bibitem{nano3}
+  Treur, J.,
+  \emph{Network-Oriented Modeling: Addressing Complexity of Cognitive, Affective and Social Interactions}.
+  Series on Understanding Complex Systems, Springer Publishers, October 2016.
+
+\end{thebibliography}
 \end{document}
