@@ -108,6 +108,33 @@ X_{10}(t+\Delta t) = X_{10}(t) + \eta_{10} (id(\omega_{10} X_{9}(t)) - X_{10}(t)
 \begin{equation}
 \frac{\delta X_{1}(t)}{\delta t} = X_{1}(t) + \eta_{1} \cdot ( id(X_{1}(t)) - X_{1}(t))
 \end{equation}
+\begin{equation}
+\frac{\delta X_{2}(t)}{\delta t} = X_{2}(t) + \eta_{2} \cdot ( id(X_{1}(t)) - X_{2}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{3}(t)}{\delta t} = X_{3}(t) + \eta_{3} \cdot ( id(X_{3}(t)) - X_{3}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{4}(t)}{\delta t} = X_{4}(t) + \eta_{4} \cdot ( alogistic_{\sigma ,\tau}(\omega_{2} X_{2}(t),\omega_{3} X_{3}(t)) - X_{4}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{5}(t)}{\delta t} = X_{5}(t) + \eta_{5} \cdot ( id(X_{4}(t)) - X_{5}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{6}(t)}{\delta t} = X_{6}(t) + \eta_{6} \cdot (alogistic_{\sigma ,\tau}(\omega_{5} X_{5}(t),\omega_{7} X_{7}(t)) - X_{6}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{7}(t)}{\delta t} = X_{7}(t) + \eta_{7} \cdot ( id(X_{6}(t)) - X_{7}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{8}(t)}{\delta t} = X_{8}(t) + \eta_{8} \cdot ( id(X_{7}(t)) - X_{8}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{9}(t)}{\delta t} = X_{9}(t) + \eta_{9} \cdot ( id(X_{8}(t)) - X_{9}(t))
+\end{equation}
+\begin{equation}
+\frac{\delta X_{10}(t)}{\delta t} = X_{10}(t) + \eta_{10} \cdot ( id(X_{9}(t)) - X_{10}(t))
+\end{equation}
 
 \section{Expected behaviour}
  \begin{itemize}
