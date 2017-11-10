@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  5 NOV 2017 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  10 NOV 2017 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,56 +830,61 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-<res/img/graphical_conceptual_representation.jpg, id=4, 855.195pt x 643.40375pt
->
-File: res/img/graphical_conceptual_representation.jpg Graphic file (type jpg)
- <use res/img/graphical_conceptual_representation.jpg>
-Package pdftex.def Info: res/img/graphical_conceptual_representation.jpg used o
-n input line 47.
-(pdftex.def)             Requested size: 327.74895pt x 246.57729pt.
+<res/img/results.png, id=4, 642.90187pt x 366.61969pt>
+File: res/img/results.png Graphic file (type png)
+
+<use res/img/results.png>
+Package pdftex.def Info: res/img/results.png used on input line 29.
+(pdftex.def)             Requested size: 345.0pt x 196.74655pt.
+
+<res/img/results_speed_factor.png, id=5, 642.90187pt x 366.61969pt>
+File: res/img/results_speed_factor.png Graphic file (type png)
+
+<use res/img/results_speed_factor.png>
+Package pdftex.def Info: res/img/results_speed_factor.png used on input line 40
+.
+(pdftex.def)             Requested size: 345.0pt x 196.74655pt.
+
+<res/img/results_delta_t.png, id=6, 642.90187pt x 366.61969pt>
+File: res/img/results_delta_t.png Graphic file (type png)
+
+<use res/img/results_delta_t.png>
+Package pdftex.def Info: res/img/results_delta_t.png used on input line 51.
+(pdftex.def)             Requested size: 345.0pt x 196.74655pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<res/img/matrix_conceptual_representation.png, id=18, 932.48375pt x 548.0475pt>
-File: res/img/matrix_conceptual_representation.png Graphic file (type png)
-<use res/img/matrix_conceptual_representation.png>
-Package pdftex.def Info: res/img/matrix_conceptual_representation.png used on i
-nput line 58.
-(pdftex.def)             Requested size: 327.74895pt x 192.6223pt.
- [2 <./res/img/graphical_conceptual_representation.jpg> <./res/img/matrix_conce
-ptual_representation.png (PNG copy)>] [3]
-<res/img/numerical_representation.png, id=27, 623.32875pt x 366.61969pt>
-File: res/img/numerical_representation.png Graphic file (type png)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./res/img/results.png (PNG
+ copy)>] [2 <./res/img/results_speed_factor.png (PNG copy)> <./res/img/results_
+delta_t.png (PNG copy)>]
+<res/img/tuning.png, id=24, 633.11531pt x 366.61969pt>
+File: res/img/tuning.png Graphic file (type png)
 
-<use res/img/numerical_representation.png>
-Package pdftex.def Info: res/img/numerical_representation.png used on input lin
-e 150.
-(pdftex.def)             Requested size: 345.0pt x 202.91692pt.
- [4 <./res/img/numerical_representation.png (PNG copy)>] [5] (./main.aux) ) 
+<use res/img/tuning.png>
+Package pdftex.def Info: res/img/tuning.png used on input line 65.
+(pdftex.def)             Requested size: 345.0pt x 199.78418pt.
+ [3 <./res/img/tuning.png (PNG copy)>] [4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 13233 strings out of 493029
- 257529 string characters out of 6136234
- 305547 words of memory out of 5000000
- 16494 multiletter control sequences out of 15000+600000
- 9668 words of font info for 35 fonts, out of 8000000 for 9000
+ 13231 strings out of 493029
+ 257271 string characters out of 6136234
+ 303535 words of memory out of 5000000
+ 16493 multiletter control sequences out of 15000+600000
+ 9854 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,56p,1084b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
-</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on main.pdf (5 pages, 1895369 bytes).
+ 62i,6n,56p,519b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on main.pdf (4 pages, 286809 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
