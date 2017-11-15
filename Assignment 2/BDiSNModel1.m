@@ -1,4 +1,4 @@
-function [results] = BDiSNModel1(initialization, relations, etha , parameters, deltaT, maxT )
+restfunction [results] = BDiSNModel1(initialization, relations, etha , parameters, deltaT, maxT )
  
 % Inputs :
     % initialization : initial values of
