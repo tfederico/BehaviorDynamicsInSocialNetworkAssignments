@@ -33,6 +33,6 @@ etha = P; % Missing parameters are equal to the input of this function
 newResutls = BDiSNModel1(initialization, relations, etha , parameters, delta_t, maxT ) ;
 %newResutls = newResutls(1:30,1:12); 
 SSR = nansum (nansum ((newResutls - Data) .^2 )) ;
-%error(i)=sqrt(SSR(i))/12;
+%error(i)=sqrt(SSR(i)/12);
 
 end
