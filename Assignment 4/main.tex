@@ -33,7 +33,7 @@ Learn to use parameter tuning tools to find the best values for a set of missing
 \section{Part 2}
 
 
-\begin{table}[!htpb]
+\begin{table}[H]
 \centering
 \begin{adjustbox}{width=1.2\textwidth,center=\textwidth}
 \begin{tabular}{c|c|c|c|c|c|c|c}
@@ -57,23 +57,23 @@ Learn to use parameter tuning tools to find the best values for a set of missing
 
 \section{Part 3}
 
-\begin{table}[!h]
+\begin{table}[H]
 \centering
 \begin{tabular}{c|c|c}
 \textbf{$\eta_{L}$} & \textbf{SSR} & Error\\ \hline
-                                                                                                                 
+                                        
                                    
-0 & 0.9593 & 0.0816  \\                                       
-0.05 & 0.0222 &  0.0124  \\
-0.1  & 0.0463  & 0.0179 \\
-0.15  &  0.1618 & 0.0335  \\  
-0.2  & 0.2621   & 0.0427\\
-0.25 & 0.3402 &  0.0486\\
-0.3 & 0.4010 &  0.0528  \\
-0.35 & 0.4491  &  0.0558  \\ 
-0.4  & 0.4881 & 0.0582 \\
-0.45  & 0.5202 &  0.0601\\
-0.5 &  0.5472 & 0.0616 
+0 & 0.9593 & 0.2827  \\                                       
+0.05 & 0.0222 &   0.0430   \\
+0.1  & 0.0463  & 0.0621 \\
+0.15  &  0.1618 & 0.1161  \\  
+0.2  & 0.2621   &  0.1478 \\
+0.25 & 0.3402 &  0.1684\\
+0.3 & 0.4010 &  0.1828  \\
+0.35 & 0.4491  &  0.1935  \\ 
+0.4  & 0.4881 & 0.2017 \\
+0.45  & 0.5202 &  0.2082\\
+0.5 &  0.5472 & 0.2135                                                                                                              
 \end{tabular}
 \caption{Exhaustive search for different values of $\eta_{L}$}
 \label{tab:exaustive_searchSSR}
@@ -89,6 +89,7 @@ The best value for $\eta_{L}$ is $\eta_{L}$=0.05.
 
 \section{Part 4}
 
+If we want to use exhaustive search with grain size of 0.01, we should check $101^{12}$ sets of values.
 
 \begin{table}[H]
 \centering
@@ -109,12 +110,16 @@ $\eta_{11}$ & 0.139 \\
 $\eta_{12}$ & 0.312 \\ 
 
 \end{tabular}
-\caption{Exhaustive search for different values of $\eta$}
+\caption{Best set of values for $\eta$ }
 \label{tab:exaustive_searchSSR}
 \end{table}
 
-If we want to use exhaustive search with grain size of 0.01, we should check $101^{12}$ sets of values.
+The error corresponding to these speed factors is 0.1046.
 
-The corresponding error is 0.1046.
+\begin{figure}[H]
+\hbox{\hspace{-6em}\includegraphics[width=1.5\textwidth]{res/img/plotdiff2}}
+\caption{Simulated values vs empirical values }
+\label{fig:part1}
+\end{figure}
 
 \end{document}
