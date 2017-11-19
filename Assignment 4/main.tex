@@ -7,6 +7,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[export]{adjustbox}[2011/08/13]
 \usepackage{float}
+\usepackage{bm}
 
 \title{Behaviour Dynamics in Social Networks - Assignment 4}
 
@@ -37,7 +38,7 @@ Learn to use parameter tuning tools to find the best values for a set of missing
 \centering
 \begin{adjustbox}{width=1.2\textwidth,center=\textwidth}
 \begin{tabular}{c|c|c|c|c|c|c|c}
-\textbf{$\eta_{L}$} & \textbf{K(t = 2)} & \textbf{L(t = 2)} & \textbf{$|$K-L(t = 2)$|$} & \textbf{K(t = 13)} & \textbf{L(t = 13)} & \textbf{$|$K-L(t = 13)$|$} & \textbf{Sum of differences} \\ \hline
+\bm{$\eta_{L}$} & \textbf{K(t = 2)} & \textbf{L(t = 2)} & \textbf{$|$K-L(t = 2)$|$} & \textbf{K(t = 13)} & \textbf{L(t = 13)} & \textbf{$|$K-L(t = 13)$|$} & \textbf{Sum of differences} \\ \hline
 0                   & 0.1146            & 0                 & 0.1146                    & 0.2221             & 0                  & 0.2221                     & 0.3367                      \\
 0.05                & 0.1146            & 0.0127            & 0.1019                    & 0.2395             & 0.1232             & 0.1162                     & 0.2181                      \\
 0.10                & 0.1146            & 0.0255            & 0.0892                    & 0.2517             & 0.1949             & 0.0568                     & 0.1460                      \\
@@ -55,12 +56,21 @@ Learn to use parameter tuning tools to find the best values for a set of missing
 \label{tab:exaustive_search}
 \end{table}
 
+The best value for $\eta_{L}$ (i.e. the one with the minimum sum of differences at $t = 2$ and $t = 13$) is $\eta_{L} = 0.45$.
+
+\begin{figure}[!htpb]
+\center
+\includegraphics[width=\textwidth]{res/img/exhaustive_search_part2}
+\caption{Results from the simulation for $\eta_{L} = 0.45$}
+\label{fig:exhaustive_search_part2}
+\end{figure}
+
 \section{Part 3}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c|c}
-\textbf{$\eta_{L}$} & \textbf{SSR} & Error\\ \hline
+\bm{$\eta_{L}$} & \textbf{SSR} & \textbf{Error}\\ \hline
                                         
                                    
 0 & 0.9593 & 0.2827  \\                                       
@@ -78,12 +88,12 @@ Learn to use parameter tuning tools to find the best values for a set of missing
 \caption{Exhaustive search for different values of $\eta_{L}$}
 \label{tab:exaustive_searchSSR}
 \end{table}
-The best value for $\eta_{L}$ is $\eta_{L}$=0.05.
+The best value for $\eta_{L}$ is $\eta_{L} = 0.05$.
 
 \begin{figure}[!h]
 \center
 \includegraphics[width=\textwidth]{res/img/plotdiff}
-\caption{Simulated values for  $\eta_{L}$=0.05 (line) vs empirical values (dots)}
+\caption{Simulated values for  $\eta_{L} = 0.05$ (line) vs empirical values (dots)}
 \label{fig:part3}
 \end{figure}
 
@@ -96,7 +106,7 @@ If we want to use exhaustive search with grain size of 0.01, we should check $10
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c}
-\textbf{$\eta_{i}$} & \textbf{value} \\ \hline
+\bm{$\eta_{i}$} & \textbf{Value} \\ \hline
                             
 $\eta_{1}$ & 0.257 \\                                       
 $\eta_{2}$ & 0.105 \\ 
@@ -113,7 +123,7 @@ $\eta_{12}$ & 0.312 \\
 
 \end{tabular}
 \caption{Best set of values for $\eta$ }
-\label{tab:exaustive_searchSSR}
+\label{tab:exaustive_search_eta}
 \end{table}
 
 The error corresponding to these speed factors is 0.1046.
@@ -122,7 +132,7 @@ The error corresponding to these speed factors is 0.1046.
 \center
 \includegraphics[width=\textwidth]{res/img/plotdiff2}
 \caption{Simulated values vs empirical values }
-\label{fig:part1}
+\label{fig:plotdiff2}
 \end{figure}
 
 \end{document}

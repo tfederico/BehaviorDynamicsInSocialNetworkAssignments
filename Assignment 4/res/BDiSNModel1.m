@@ -24,24 +24,24 @@ end
 %
 % If you do not waht to create a figure as the result, you can make the rest of this code as comments: (using %{ at the begining of the next line 
 % close;
-% figure ;
-% hold all;
-% leg = [];
-% for i = 1:1:S
-%     plot(results(:,i),'LineWidth',3) ;
-%     if i<10
-%         leg = [leg;['X ',num2str(i)]] ;
-%     else
-%         leg = [leg;['X',num2str(i)]] ;
-%     end
-% end
-% Leg = legend(leg);
-% set(Leg,'FontSize',14)
-% ylim( [min(min(results)) , max(max(results))] + 0.1 * [ min(min(results))- max(max(results)) , -min(min(results)) + max(max(results))]);
-% temp = get(gca,'XTick');
-% set(gca,'XTickLabel',num2cell(temp * deltaT) , 'fontsize',14); 
-% set(gca,'XTick',temp);
-% xlabel('Time' , 'fontsize',14);
-% ylabel('States Value' ,'fontsize',14 ) ;
+figure ;
+hold all;
+leg = [];
+for i = 1:1:S
+    plot(results(:,i),'LineWidth',3) ;
+    if i<10
+        leg = [leg;['X ',num2str(i)]] ;
+    else
+        leg = [leg;['X',num2str(i)]] ;
+    end
+end
+Leg = legend(leg);
+set(Leg,'FontSize',14)
+ylim( [min(min(results)) , max(max(results))] + 0.1 * [ min(min(results))- max(max(results)) , -min(min(results)) + max(max(results))]);
+temp = get(gca,'XTick');
+set(gca,'XTickLabel',num2cell(temp * deltaT) , 'fontsize',14); 
+set(gca,'XTick',temp);
+xlabel('Time' , 'fontsize',14);
+ylabel('States Value' ,'fontsize',14 ) ;
 
 %}
