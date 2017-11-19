@@ -36,7 +36,7 @@ for j=1:12
 
     %Data = S.Data(j); % EmpIrical Data
 
-    etha = [0.1 0.1 0.1 0.05 0.05 0.05 0.5 0.1 0.1 0.01 0.1 0.05];
+    etha = [0.257 0.105 0.062 0.078 0.323 0.089 0.370 0.229 0.113 0.032 0.139 0.312];
 
     maxNumber = floor(maxT/deltaT) ; % Number of steps
 
