@@ -24,7 +24,7 @@ end
 %
 % If you do not waht to create a figure as the result, you can make the rest of this code as comments: (using %{ at the begining of the next line 
 % close;
-%{
+
 figure ;
 hold all;
 leg = [];
