@@ -8,6 +8,7 @@
 \usepackage[export]{adjustbox}[2011/08/13]
 \usepackage{float}
 \usepackage{bm}
+\usepackage{hyperref}
 
 \title{Behaviour Dynamics in Social Networks - Assignment 6}
 
@@ -32,19 +33,22 @@ Looking at the hashtags I can have an insight to events and locations related to
 
 \subsection{Activity 2}
 
-We chose the Twitter profile of Bill Gates because we thought that it could have had a large amount of different hashtags. It is interesting to find about that the  most common hashtags and words are referred to his commitment to defeat diseases such as polio and malaria through the Melinda and Bill Gates Foundation. It would be interesting to see the distribution of these tags over the time.
+We chose the Twitter profile of Bill Gates because we thought that it could have had a large amount of different hashtags. It is interesting to find about that the  most common hashtags and words are referred to his commitment to defeat diseases such as polio and malaria through the Melinda and Bill Gates Foundation. It would be interesting to see the distribution of these tags over the time. In Figure~\ref{fig:term_distribution} and Figure~\ref{fig:hashtags_distribution} we can see, respectively, the distribution of the 1000 most used terms and hashtags.
 
-\begin{figure}[!htpb]
+\begin{figure}[!hbtp]
 \centering
 \includegraphics[width=\textwidth]{res/img/term_distribution}
 \caption{Term distribution}
+\label{fig:term_distribution}
 \end{figure}
 
-\begin{figure}[!htpb]
+\begin{figure}[!hbtp]
 \centering
 \includegraphics[width=\textwidth]{res/img/hashtags_distribution}
 \caption{Hashtag distribution}
+\label{fig:hashtags_distribution}
 \end{figure}
+
 
 \subsection{Activity 3}
 
@@ -52,32 +56,26 @@ My query is \emph{polio OR malaria}. Looking at the function \emph{CustomListene
 
 \subsection{Activity 4}
 
-Positive tweets:
+Positive tweets (358):
 
 \begin{enumerate}
-\item RT @Lin_Manuel: Gmorning! Happy #GivingTuesday. If you don't have a dollar to give, you STILL have your time, your focus, your voice. Be g...
-
+\item RT @Lin\_Manuel: Gmorning! Happy \#GivingTuesday. If you don't have a dollar to give, you STILL have your time, your focus, your voice. Be g...
 \item I'm amazed by how @NandanNilekani has lent his entrepreneurial passion to philanthropy. I'm delighted to welcome hi... \url{https://t.co/ly8PPvKz98}
-
 \item I really enjoyed this conversation between our foundation CEO @SueDHellmann and Science Friday host @iraflatow. \url{https://t.co/xRfOtBumhg}
-
 \item @johngreen Congrats @johngreen. I'm excited for you and your readers - including my daughter Phoebe, who's one of your biggest fans!
-
-\item I always learn a lot from my friend @RayDalio. His new book #Principles is a remarkable look at his life and career: \url{https://t.co/2A4EREQLYU}
+\item I always learn a lot from my friend @RayDalio. His new book \#Principles is a remarkable look at his life and career: \url{https://t.co/2A4EREQLYU}
 \end{enumerate}
 
-Negative tweets:
+Negative tweets (32):
 
 \begin{enumerate}
-\item "The death that didn't happen is not visible. A fascinating conversation between @Atul_Gawande and @Gladwell. https://t.co/lLprByfc0u
-
-\item I'm very disappointed with today's decision to end #DACA. Our statement: https://t.co/67YQGYtDGo
-
-\item Melinda and I are deeply saddened to learn that our friend, mentor, and advisor Sam Dryden died this morning. https://t.co/KnAhrA3Czh
-
-\item There has been incredible progress since the last Ebola outbreak. This is why we can't let up... https://t.co/BWE2PG6ZFi
-
+\item "The death that didn't happen is not visible. A fascinating conversation between @Atul\_Gawande and @Gladwell. \url{https://t.co/lLprByfc0u}
+\item I'm very disappointed with today's decision to end \#DACA. Our statement: \url{https://t.co/67YQGYtDGo}
+\item Melinda and I are deeply saddened to learn that our friend, mentor, and advisor Sam Dryden died this morning. \url{https://t.co/KnAhrA3Czh}
+\item There has been incredible progress since the last Ebola outbreak. This is why we can't let up... \url{https://t.co/BWE2PG6ZFi}
 \item 5/ I also have one big regret: When I left school, I knew little about the world's worst inequities. Took me decades to learn.
 \end{enumerate}
+
+We get this proportion of positive/negative tweets because the user (Bill Gates) tendentially tweets much more about positive aspects than negative ones. Probably, if he tweeted much more about negative things, he could have lost a lot of followers.
 
 \end{document}
