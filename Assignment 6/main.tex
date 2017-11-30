@@ -78,4 +78,68 @@ Negative tweets (32):
 
 We get this proportion of positive/negative tweets because the user (Bill Gates) tendentially tweets much more about positive aspects than negative ones. Probably, if he tweeted much more about negative things, he could have lost a lot of followers.
 
+\section{Part B: Glasgow research on smoking habits in teenagers}
+
+\subsection{Question 1}
+
+If we chose $\Delta$t=1 year we would not be able to observe the relationships which involve people that were not yet part of the school cohort, or had already left the school cohort at one of the yearly points. 
+$\Delta$t=5 would also not be a good choice because the total time (3 years) can not be divided into 5 months slots. 
+
+\subsection{Question 2}
+
+We chose time=6, so that the values of the states and the connection weights will be calculated for 6 consecutive time points, as if they were reviewed once every six months in the three years.\\
+$\Delta$t=0.5 since we want to make measurements every half year.\\
+The value chosen for the speed factor is 0.5. Since we are using the same speed factor for two different processes, its value should be as central between 0 and 1 as possible.
+
+
+\subsection{Question 3}
+
+The parameter choice depends on the problem we want to evaluate. The scenario based on which we chose the parameters is the one described in the answer of Question 2. 
+
+\subsection{Question 4}
+ 
+Changing the speed factor means changing how fast a connection between two people becomes stronger. A high speed factor means that the values of the connections will increase rapidly, while a lower speed factor means that the relationships will develop very slowly. 
+
+The speed factor is also used to calculate how fast people who are connected to each other converge to the same smoking status. In this case, changing the speed factor means changing how fast people who are connected converge to the same smoking status.A high speed factor means fast convergence, while a low one means slow convergence. 
+
+In therms of graphic modeling, a high speed factor is synonym with a steep graph, while a low speed factor is synonym with a flatter graph. 
+
+\subsection{Question 5}
+
+The amplification parameter is used to calculate the variation in the weights of the edges between two consecutive time points. This parameter dictates how big/small the change will be. A high amplification factor means a big change, while a low one means a small change. If we decrease the amplification factor, the difference between the weights of an edge at two consecutive time points will become smaller, meaning that the connection will strengthen slower. 
+
+\subsection{Question 6}
+
+In the real world, different processes happen with different speeds, so it would be reasonable to give different speed factors for the update of the edges and for the update of the states of the nodes. 
+The processes we are modeling are interdependent, so changing the speed factor of one of them affects the other process as well. 
+
+\subsection{Question 7}
+
+In order to have a better representation of the graph, we also applied the Force Atlas 2 layout.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{res/img/q17graph.png}
+\caption{Graph resulted after Step 4}
+\label{fig:network_output}
+\end{figure}
+
+\subsection{Question 8}
+
+There are three clusters in our network, corresponding to the three levels of the smoking habit. The existence of these clusters illustrates the homophily principle.
+
+\subsection{Question 9}
+In the initial network, there are no clusters. The clusters are formed after applying the homophily principle. 
+
+\subsection{Question 10}
+
+In our network, the bridge between the two clusters disappears after applying the edge weight filter for weights bigger than 0.8.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{res/img/bridge.png}
+\caption{The graph broken in two parts}
+\label{fig:network_output}
+\end{figure}
+
 \end{document}
