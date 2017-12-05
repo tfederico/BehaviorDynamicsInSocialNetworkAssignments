@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[export]{adjustbox}[2011/08/13]
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+
+\title{Behaviour Dynamics in Social Networks - Assignment 7}
+
+\author{Maria Hotoiu, Federico Tavella}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Verification by mathematical analysis of stationary points.
+\end{abstract}
+
+\section{Determine equilibria for a constant stimulus}
+
+The values chosen for the parameters are: repetition=30, duration=30, $\eta_{1}$=0.4, $\eta_{2}$=0.3, $\mu_{1}$=0.8 and $\mu_{2}$=0.9.
+
+\subsection{Question 1}
+The final equilibrium values for the states rep, prep and feel based on observations in the simulation are:\\
+\textbf{rep}: 1 \\
+\textbf{prep}: 0.991535551	\\
+\textbf{feel}: 0.89068188
+
+\subsection{Question 2}
+
+The observed equilibrium values based on observation in the simulation:\\ 
+$\omega_{1}$=0.832149364\\
+$\omega_{2}$=0.898285371\\
+
+The predicted equilibrium values based on mathematical analysis: \\
+$\omega_{1}$=0.832149364\\
+$\omega_{2}$=0.898285371\\
+
+The two sets of values for the connection weights are equal, therefore the accuracy is 0.
+
+\subsection{Question 3}
+
+The differences between the aggregated impact and the values for the two adaptive connections for these equilibria vary from 0 to 0.2 in the first case (aggimpact-$\omega_{1}$) and from 0 to 0.1 in the second case (aggimpact-$\omega_{2}$). 
+By exploring the difference between the aggregated impact and $\omega_{1}$ and $\omega_{2}$ in the stationary points we can observe that the accuracy is 0<$10^{-2}$. 
+
+
+\subsection{Question 4}
+
+\section{Determine stationary points for an alternating stimulus}
+
+Formula used for accuracy: (observed value – predicted value) / predicted value = error. In our case, the observed values are $\omega_{1}$ and $\omega_{2}$ and the predicted value is the aggregated impact.
+
+\subsection{Question 1}
+
+The values chosen for the parameters are: repetition=40, duration=20, $\eta_{1}$=0.4, $\eta_{2}$=0.3, $\mu_{1}$=0.8 and $\mu_{2}$=0.9.
+
+Examples of stationary points. \\
+\textbf{rep}: t0-t18, t20-t38 etc. \\
+\textbf{prep}: t77, t78, t79, t115, t116 etc.	\\
+\textbf{feel}: t116, t117, t118 etc.
+
+Example of equilibrium points and the corresponding differences between the aggregated impact and $\omega_{1}$ and $\omega_{2}$:
+\begin{itemize}
+\item point t78: aggimpact-$\omega_{1}$=-0.027005337 $\implies$ accuracy=0.25 and aggimpact-$\omega_{2}$=-0.001819542 $\implies$ accuracy=0.11 
+\item point t116: aggimpact-$\omega_{1}$=-0.03167113 6 $\implies$ accuracy=0.25 and aggimpact-$\omega_{2}$=-0.000811289 $\implies$ accuracy=0.11
+\end{itemize}
+
+\subsection{Question 2}
+
+The values chosen for the parameters are: repetition=20, duration=10, $\eta_{1}$=0.4, $\eta_{2}$=0.3, $\mu_{1}$=0.8 and $\mu_{2}$=0.9.
+
+Examples of stationary points. \\
+\textbf{rep}: t0-t8 \\
+\textbf{prep}: t159 	\\
+\textbf{feel}: t160
+
+Example of equilibrium points and the corresponding differences between the aggregated impact and $\omega_{1}$ and $\omega_{2}$:
+point t218: aggimpact-$\omega_{1}$=-0.01893416 $\implies$ accuracy=0.25 and aggimpact-$\omega_{2}$=-1.59672E-05 $\implies$ accuracy=-1.59672E-05/0.000143704
+ 
+
+
+\end{document}
